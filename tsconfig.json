@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2020" /* Визначає версію ECMAScript, яка використовується для генерації вихідного коду */,
+    "useDefineForClassFields": true,
+    "module": "ESNext" /* Визначає систему модулів для використання */,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ] /* Визначає, які бібліотеки слід використовувати */,
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}
+
+/* esModuleInterop: Дозволяє імпортувати модулі CommonJS так, ніби вони були б ES6-модулями. Це означає, що якщо у нас є якась бібліотека, яка використовує CommonJS, нам доведеться писати так:
+
+
+
+import * as express from 'express'; */
+
+/* З esModuleInterop ми можемо імпортувати модулі більш природним для ES6 способом:
+
+
+
+import express from 'express'; */
